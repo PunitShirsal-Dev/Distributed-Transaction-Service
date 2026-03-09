@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  distributed-transaction-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: distributed-transaction-service
+    ports:
+      - "8114:8114"
+
